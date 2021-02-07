@@ -1,0 +1,11 @@
+[releases]
+
+[releases.redis]
+last_known_version = "6.0.10"
+github_repo = "redis/redis"
+
+
+[releases.strongswan]
+last_known_version = "5.9.1"
+github_repo = "strongswan/strongswan"
+

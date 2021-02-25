@@ -1,6 +1,6 @@
 .PHONY: build test dev
 
-VERSION=0.1.1
+VERSION=0.1.2
 
 build:
 	CGO_ENABLED=0  go build -o ./dist/spc -a -ldflags '-s' -installsuffix cgo ./cmd/spc

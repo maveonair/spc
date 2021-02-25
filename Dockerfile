@@ -18,5 +18,9 @@ WORKDIR /app
 
 COPY --from=build /src/dist/spc .
 
+RUN addgroup -g 21337 app
+RUN adduser -D -u 21337 -G app app
+USER app
+
 ENTRYPOINT ["/usr/bin/dumb-init", "--"]
 CMD ["./spc"]
